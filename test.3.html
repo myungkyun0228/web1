@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            margin:10px
+        }
+        #id{
+            font: bold 13px Gothic, sans-serif;
+            color: blue;
+        }
+        #pwd{
+            font: bold 13px Gothic, sans-serif;
+            color: blue;
+        }
+        #email{
+            font: bold 13px Gothic, sans-serif;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="localhost/login.jsp">
+    <div id="id">
+        <label for="id_txt"> // label 의 for 속성의 값은 input 태그의 id 속성과 연결하여 적는다. 
+            아이디 : <input type="text" name="id" id="id_txt" size="40" placeholder="ID를 입력해 주세요">
+        </label>
+    </div>
+    <div id="pwd">
+        <label for="password">
+            비밀번호 : <input type="password" name="password" id="password" size="40" placeholder="비밀번호 6자리를 입력해 주세요">
+        </label>
+    </div>
+    <div id="email">
+        <label for="email_txt">
+            이메일 : <input type="email" name="email" id="email_txt" required>
+        </label>
+    </div>
+    <div>
+        <input type="submit" value="저장">
+    </div>
+</form>
+</body>
+</html>
